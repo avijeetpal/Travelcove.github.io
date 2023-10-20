@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-position: center;
+    background-size: cover;
+}
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.video-container video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    cursor: pointer;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.navbar ul li a:hover {
+    background: rgb(255, 255, 255);
+    color: black; /* Change text color on hover */
+    transition: 0.5s;
+}
+
+.content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.content h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.banner video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .banner video {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Style the box */
+@media (min-width:769px) {
+.box {
+    background-color: rgba(0, 0, 0, 0.295); /* Background color for the entire box */
+    width: 100%; /* Take up the full width of the viewport */
+    max-width: 1000px; /* Adjust the width as needed */
+    margin: 190px; /* Center horizontally by setting left and right margins to "auto" */
+    margin-left: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Position the box absolutely within the viewport */
+    top: 50%; /* Move the box down by 50% of the viewport height */
+    transform: translateY(-50%); /* Center vertically using a translation */
+    border-right: 10px;
+}
+}
+@media (max-width:769px) {
+    .box {
+        background-color: rgba(0, 0, 0, 0.295);
+        max-width: 1000px;
+        width: 70%; /* Adjust the width as needed for a phone screen */
+        margin:  50px; /* Center horizontally by setting left and right margins to "auto" */
+        padding: 15px; /* Decreased padding for a phone screen */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 90%;
+        transform: translateY(-50%);
+        border-right: 100px; /* Adjust border size as needed for a phone screen */
+    }    
+}
+
+/* Style the horizontal line */
+hr {
+    border: 1px solid #000000;
+    margin: 20px 0;
+}
+
+/* Style the top section */
+.top-section {
+    /* Add styles for the top section here */
+    text-align: center;
+    box-sizing: auto;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Style the bottom section */
+.bottom-section {
+    /* Add styles for the bottom section here */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+}
+/* Container for founders */
+.founders-container {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly, pushing them to the edges */
+}
+
+/* Style for the person boxes */
+.person {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Style for the founder box */
+.founder-box {
+    background-color: #00000050;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Distribute available space equally between founder and co-founder */
+    margin: 0 10px; /* Add some margin between the boxes */
+}
+
+/* Style for the co-founder box */
+.cofounder-box {
+    background-color:  #00000050;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Distribute available space equally between founder and co-founder */
+    margin: 0 10px; /* Add some margin between the boxes */
+}
+
+/* Style for the founder's image */
+.founder-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Style for the co-founder's image */
+.cofounder-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-position: center;
+    background-size: cover;
+}
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.video-container video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.navbar {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    cursor: pointer;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.navbar ul li a:hover {
+    background: rgb(255, 255, 255);
+    color: black; /* Change text color on hover */
+    transition: 0.5s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.content h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+button {
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: white; /* Change text color to white */
+    background: transparent; /* Remove background color */
+    border: 2px solid rgb(255, 255, 255); /* Add a white border */
+    font-size: 20px;
+    
+}
+
+button:hover {
+    background: #4190c5;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    border: 1px solid #4190c5;
+}
+
+.banner video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .banner video {
+        width: 100%;
+        height: auto;
+
+    }
+}
+.box{
+    margin-top: 0px;
+    background-color: #4190c557; /* Light background color */
+    padding: 20px; /* rgb(135, 255, 239)ding for spacing */
+    border-radius: 0px; /* Rounded corners */
+}
+.h3{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/* Style the category box container */
+.category-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Style individual category boxes */
+.category {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    background-color: #ffffff93;
+    text-align: center;
+}
+.category h4 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Style the "See All" button */
+.link{
+    text-decoration: none;
+}
+.but {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.but:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+/* Style the FAQ section within an ordered list */
+.faq-list {
+    margin-top: 0px;
+    background-color: #4190c557; /* Light background color */
+    padding: 20px; /* rgb(135, 255, 239)ding for spacing */
+    border-radius: 0px; /* Rounded corners */
+    list-style: decimal; /* Use decimal numbering (1, 2, 3, etc.) */
+}
+
+/* Style individual FAQ items within list items */
+.faq-list li {
+    margin-top: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff93;
+}
+
+.faq-list li h4 {
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.faq-list li p {
+    font-size: 14px;
+    display: none; /* Initially hide answers */
+}
+.faq-list li:hover{
+    opacity: 0.9;
+}
+/* Add a hover effect to expand answers when hovering over questions */
+.faq-list li:hover p {
+    display: block;
+}
+.toggle-answer-button{
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.toggle-answer-button::after {
+    content: " \2193"; /* Unicode character for a right-facing arrow */
+    margin-left: 5px;
+}
+/* Style the copyright notice */
+.copyright {
+    background-color:#4190c557;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20px; /* Adjust the height as needed */
+}

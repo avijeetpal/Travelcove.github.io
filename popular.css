@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('your-background-image.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    cursor: pointer;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.navbar ul li a:hover {
+    background: rgb(255, 255, 255);
+    color: black; /* Change text color on hover */
+    transition: 0.5s;
+}
+
+.content {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.content h2 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.banner video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    .banner video {
+        width: 100%;
+        height: auto;
+    }
+}
+.box{
+    margin-top: 150px;
+    background-color: transparent; /* Light background color */
+    padding: 20px; /* rgb(135, 255, 239)ding for spacing */
+    border-radius: 0px; /* Rounded corners */
+    color: rgb(255, 255, 255);
+}
+.h3{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/* Style the category box container */
+.category-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+/* Style individual category boxes */
+.category {
+    flex: 1;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.212);
+    text-align: center;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    
+}
+.category:hover{
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border: 10px solid rgb(255, 255, 255);
+    color: black;
+}
+.category h4 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.category:hover .but{
+    background-color: rgba(17, 16, 16, 0.144);
+    color: rgb(0, 0, 0);
+}
+.but {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.category:hover .but:hover {
+    background-color: rgb(0, 0, 0);
+    color:  rgb(255, 255, 255);
+}
+.link{
+    text-decoration: none;
+}

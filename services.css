@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+}
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-position: center;
+    background-size: cover;
+}
+.video-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind the content */
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.navbar {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    cursor: pointer;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.navbar ul li a:hover {
+    background: rgb(255, 255, 255);
+    color: black; /* Change text color on hover */
+    transition: 0.5s;
+}
+/* Adjust font size and colors for responsiveness */
+.services {
+    text-align: center;
+}
+.services h1{
+    font-size: 2.5rem; /* Responsive font size */
+    color: #ffffff; /* Text color */
+    text-align: center;
+    margin: 20px 0;
+}
+.content {
+    background-color: rgba(0, 0, 0, 0.363);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    border-radius: 50px;
+}
+h1 {
+    font-size: 36px;
+    margin: 0; /* Remove the default margin for h1 */
+    padding-left: 15px;
+}
+
+/* Add styling for the .places-list and its children as needed */
+.places-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.places-list li {
+    background-color: rgba(20, 14, 14, 0.61);
+    border: 0.5px solid #1f1e1e4b;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1; /* Distribute available space equally */
+    max-width: calc(33.33% - 20px); /* 33.33% width for responsiveness, considering margins */
+    min-width: 250px; /* Minimum width for each box */
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.places-list li {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+.places-list li:hover{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border: 10px solid rgb(0, 0, 0);
+}
+.places-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+.places-list h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.places-list p {
+    font-size: 16px;
+}
+/* Add more styling as needed */
+button {
+    width: 100%; /* Occupy 100% of the available width */
+    padding: 10px;
+    margin: 20px; /* Center-align horizontally and provide margin as needed */
+    margin-left: 62px;    
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 15px;
+    max-width: 150px; /* Limit the maximum width for larger screens */
+}
+
+button:hover {
+    background: #ffffff;
+    color: #000;
+    transition: 0.5s;
+    border: 5px solid white;
+}
+
+.view-more {
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 45%;
+}
+
+.view-more{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+}
+
+.view-more:hover {
+    background-color: #0056b3;
+    color: #fdfdfd;
+    border: 5px solid #0056b3;
+    box-shadow: 0 0 10px #0056b3;
+    transition: 0.3s;
+}
+@media (max-width: 768px){
+    .places-list{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .places-list li{
+        width: 100%;
+    }
+}
